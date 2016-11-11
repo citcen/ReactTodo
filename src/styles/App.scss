@@ -1,0 +1,119 @@
+
+body {
+    font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";
+}
+
+div,ul,li,p {
+    margin: 0;
+    padding: 0;
+}
+
+li { list-style: none; }
+
+.fr { float: right; }
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers*/
+    color:#999;
+    font-size:14px;
+}
+
+input:-moz-placeholder {  /* Mozilla Firefox 4 to 18*/
+    color:#999;
+    font-size:14px;
+}
+
+input::-moz-placeholder {  /* Mozilla Firefox 19+*/
+    color:#999;
+    font-size:14px;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+*/
+    color:#999;
+    font-size:14px;
+}
+
+#app {
+
+}
+
+/* todo content start*/
+.todo-content {
+    position: relative;
+    margin: 100px 0 0 400px;
+
+    width: 500px;
+    background-color: #f1f1f1;
+
+    .todo-header {
+        width: 100%;
+    }
+
+    .todo-header input {
+        padding: 5px 10px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .todo-empty {
+        text-align: center;
+        color: #666;
+        font-size: 16px;
+        line-height: 40px;
+        background-color: #eaeaea;
+    }
+
+    .todo-list {
+        width: 100%;
+        .todo-item {
+            padding: 0 15px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid #eee;
+            border-top: none;
+            box-sizing: border-box;
+            background-color: #fff;
+            vertical-align: middle;
+
+            input {
+
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            .task-done {
+                text-decoration: line-through;
+            }
+
+            button {
+                display: none;
+
+                height: 22px;
+                line-height: 22px;
+                background-color: #3e76d8;
+                color: #fff;
+                border-radius: 5px;
+                text-align: center;
+                border: none;
+                outline: none;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+/* todo content end */
+
+
